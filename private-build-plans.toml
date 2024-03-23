@@ -1,0 +1,83 @@
+[buildPlans.MarcoCustom]
+family = "marco-custom"
+spacing = "normal"
+serifs = "sans"
+noCvSs = false
+exportGlyphNames = true
+
+[buildPlans.MarcoCustom.variants.design]
+capital-a = "curly-serifless"
+capital-j = "serifed-both-sides"
+capital-l = "serifless"
+capital-p = "closed-motion-serifed"
+capital-q = "crossing"
+capital-z = "curly-serifless-with-crossbar"
+f = "flat-hook-tailed"
+g = "double-storey-open"
+i = "zshaped"
+k = "curly-serifless"
+l = "tailed-serifed"
+m = "top-left-serifed"
+n = "straight-top-left-serifed"
+q = "straight-motion-serifed"
+r = "top-serifed"
+x = "straight-serifless"
+z = "curly-serifless-with-crossbar"
+lower-delta = "flat-top"
+lower-lambda = "tailed-turn"
+one = "no-base-flat-top-serif"
+three = "two-arcs"
+four = "closed-serifed"
+six = "straight-bar"
+seven = "bend-serifless-crossbar"
+eight = "two-circles"
+nine = "straight-bar"
+punctuation-dot = "round"
+asterisk = "hex-mid"
+underscore = "high"
+paren = "normal"
+brace = "curly-flat-boundary"
+guillemet = "straight"
+at = "fourfold-tall"
+dollar = "interrupted"
+question = "smooth"
+micro-sign = "tailed-motion-serifed"
+lig-ltgteq = "slanted"
+
+  [buildPlans.MarcoCustom.ligations]
+  inherits = "dlig"
+
+[buildPlans.MarcoCustom.widths.Normal]
+shape = 500
+menu = 5
+css = "normal"
+
+[buildPlans.MarcoCustom.widths.Extended]
+shape = 600
+menu = 7
+css = "expanded"
+
+[buildPlans.MarcoCustom.widths.Condensed]
+shape = 416
+menu = 3
+css = "condensed"
+
+[buildPlans.MarcoCustom.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
+
+[buildPlans.MarcoCustom.widths.SemiExtended]
+shape = 548
+menu = 6
+css = "semi-expanded"
+
+[buildPlans.MarcoCustom.widths.ExtraExtended]
+shape = 658
+menu = 8
+css = "extra-expanded"
+
+[buildPlans.MarcoCustom.widths.UltraExtended]
+shape = 720
+menu = 9
+css = "ultra-expanded"
