@@ -2,6 +2,8 @@
 
 git submodule update --init --recursive
 
-cd Iosevka
+pushd Iosevka
 
 npm install --force
+
+npm run build -- contents::MarcoCustom
