@@ -1,7 +1,11 @@
 #!/bin/bash
 
+set -eu
+
+DIST_DIR=./Iosevka/dist/MarcoCustom
+
+rm -rf patch_in
 mkdir -p patch_in patch_out
-# cp -f dist/marco-custom/ttf/marco-custom-{regular.ttf,bold.ttf,italic.ttf,bolditalic.ttf} to_patch
-# cp -f dist/marco-custom/ttf/marco-custom-light*.ttf to_patch
-# cp -f dist/marco-custom/ttf/marco-custom-extendedlight*.ttf to_patch
+cp -f ${DIST_DIR}/TTF/MarcoCustom-{Regular.ttf,Bold*.ttf,Italic*.ttf,Oblique*.ttf} patch_in
+cp -f ${DIST_DIR}/TTF/MarcoCustom-{Light*.ttf,ExtendedLight*.ttf} patch_in
 exec docker run --rm -v `pwd`/patch_in:/in -v `pwd`/patch_out:/out nerdfonts/patcher --progressbars --adjust-line-height --careful --mono --complete # --powerline --powerlineextra --codicons --octicons --powersymbols --fontawesome
