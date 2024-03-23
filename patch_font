@@ -1,0 +1,7 @@
+#!/bin/bash
+
+mkdir -p patch_in patch_out
+# cp -f dist/marco-custom/ttf/marco-custom-{regular.ttf,bold.ttf,italic.ttf,bolditalic.ttf} to_patch
+# cp -f dist/marco-custom/ttf/marco-custom-light*.ttf to_patch
+# cp -f dist/marco-custom/ttf/marco-custom-extendedlight*.ttf to_patch
+exec docker run --rm -v `pwd`/patch_in:/in -v `pwd`/patch_out:/out nerdfonts/patcher --progressbars --adjust-line-height --careful --mono --complete # --powerline --powerlineextra --codicons --octicons --powersymbols --fontawesome
