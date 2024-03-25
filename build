@@ -4,6 +4,8 @@ git submodule update --init --recursive
 
 pushd Iosevka
 
+ln -sf ../private-build-plans.toml
+
 npm install --force
 
 npm run build -- contents::MarcoCustom
