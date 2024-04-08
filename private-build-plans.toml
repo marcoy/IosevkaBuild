@@ -21,7 +21,8 @@ m = "top-left-serifed"
 n = "straight-top-left-serifed"
 q = "straight-motion-serifed"
 r = "top-serifed"
-x = "straight-serifless"
+x = "semi-chancery-straight"
+y = "straight-turn-motion-serifed"
 z = "curly-serifless-with-crossbar"
 lower-delta = "flat-top"
 lower-lambda = "tailed-turn"
@@ -46,38 +47,3 @@ lig-ltgteq = "slanted"
 
   [buildPlans.MarcoCustom.ligations]
   inherits = "dlig"
-
-[buildPlans.MarcoCustom.widths.Normal]
-shape = 500
-menu = 5
-css = "normal"
-
-[buildPlans.MarcoCustom.widths.Extended]
-shape = 600
-menu = 7
-css = "expanded"
-
-[buildPlans.MarcoCustom.widths.Condensed]
-shape = 416
-menu = 3
-css = "condensed"
-
-[buildPlans.MarcoCustom.widths.SemiCondensed]
-shape = 456
-menu = 4
-css = "semi-condensed"
-
-[buildPlans.MarcoCustom.widths.SemiExtended]
-shape = 548
-menu = 6
-css = "semi-expanded"
-
-[buildPlans.MarcoCustom.widths.ExtraExtended]
-shape = 658
-menu = 8
-css = "extra-expanded"
-
-[buildPlans.MarcoCustom.widths.UltraExtended]
-shape = 720
-menu = 9
-css = "ultra-expanded"
