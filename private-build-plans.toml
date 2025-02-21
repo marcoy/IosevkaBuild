@@ -44,6 +44,7 @@ at = "fourfold-tall"
 dollar = "through"
 question = "smooth"
 micro-sign = "tailed-motion-serifed"
+decorative-angle-brackets = "tall"
 lig-ltgteq = "slanted"
 
   [buildPlans.MarcoCustom.ligations]
