@@ -11,4 +11,4 @@ cp -f ${DIST_DIR}/TTF/MarcoCustom-ExtraBold*.ttf patch_in
 cp -f ${DIST_DIR}/TTF/MarcoCustom-{Light*.ttf,ExtraLight*.ttf} patch_in
 cp -f ${DIST_DIR}/TTF/MarcoCustom-Thin*.ttf patch_in
 docker pull nerdfonts/patcher
-exec docker run --name font-patcher --rm -e "PN=5" -v $(pwd)/patch_in:/in -v $(pwd)/patch_out:/out nerdfonts/patcher --progressbars --adjust-line-height --careful --mono --complete # --powerline --powerlineextra --codicons --octicons --powersymbols --fontawesome
+exec docker run --name font-patcher --rm -e "PN=6" -v $(pwd)/patch_in:/in -v $(pwd)/patch_out:/out nerdfonts/patcher --progressbars --adjust-line-height --careful --mono --complete # --powerline --powerlineextra --codicons --octicons --powersymbols --fontawesome
